@@ -51,7 +51,7 @@ class Movie(models.Model):
     tagline = models.CharField('Слоган', max_length=100, default='')
     description = models.TextField('Описание')
     poster = models.ImageField('Постер', upload_to='movies/')
-    year = models.PositiveIntegerField('Дата выхода', default=date.year)
+    year = models.PositiveIntegerField('Дата выхода', default=date.today().year)
     country = models.CharField('Страна', max_length=30)
     directors = models.ManyToManyField(Actor, verbose_name='режиссер', related_name='film_director')
     actors = models.ManyToManyField(Actor, verbose_name='актеры')
@@ -122,7 +122,7 @@ class Reviews(models.Model):
 
     def __str__(self):
         return f'{self.name} - {self.movie}'
-    
+
     class Meta:
         verbose_name = 'Отзыв'
         verbose_name_plural = 'Отзывы'
