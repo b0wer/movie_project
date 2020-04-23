@@ -1,4 +1,7 @@
-{% extends 'movies.html' %}
+{% extends 'base.html' %}
+
+{% block title %}О фильме: {{movie.title}} {% endblock title %}
+{% block class_banner %}{% endblock class_banner %}
 
 {% block content %}
 <div class="left-ads-display col-lg-8">
@@ -95,9 +98,9 @@
             О фильме {{ movie.title}}</h3>
         <br>
         <p>
-            <img src="../static/bundles/images/about.jpg" class="img-fluid" alt="">
-            <img src="../static/bundles/images/admin.jpg" class="img-fluid" alt="">
-            <img src="../static/bundles/images/d1.jpg" class="img-fluid" alt="">
+            <img src="../static/images/about.jpg" class="img-fluid" alt="">
+            <img src="../static/images/admin.jpg" class="img-fluid" alt="">
+            <img src="../static/images/d1.jpg" class="img-fluid" alt="">
         </p>
 
         <p class="editContent" style="outline: none; cursor: inherit;">Сара Коннор
@@ -172,7 +175,7 @@
             <!--  //contact form grid ends here -->
         </div>
         <div class="media py-5">
-            <img src="../static/bundles/images/te2.jpg" class="mr-3 img-fluid" alt="image"
+            <img src="../staticimages/te2.jpg" class="mr-3 img-fluid" alt="image"
                  style="outline: none; cursor: inherit;">
             <div class="media-body mt-4">
                 <h5 class="mt-0 editContent"
@@ -185,7 +188,7 @@
                 <div class="media mt-5 editContent"
                      style="outline: none; cursor: inherit;">
                     <a class="pr-3" href="#">
-                        <img src="../static/bundles/images/te1.jpg" class="img-fluid "
+                        <img src="../static/images/te1.jpg" class="img-fluid "
                              alt="image" style="outline: none; cursor: inherit;">
                     </a>
                     <div class="media-body">
@@ -203,4 +206,4 @@
         </div>
     </div>
 </div>
-{% endblock %}
+{% endblock content %}

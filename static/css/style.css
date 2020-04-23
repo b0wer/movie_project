@@ -404,6 +404,12 @@ li > a:only-child:after {
     min-height: 20em;
 }
 
+.bg1{
+    background-color: black;
+    margin-top: 0px;
+    background-image: url(../single-post-pic.jpg);
+}
+
 /*-- place holder --*/
 
 .banner-form ::-webkit-input-placeholder {
