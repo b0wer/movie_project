@@ -818,6 +818,11 @@ li.breadcrumb-item a {
 /*--/shop--*/
 /*-- special deals --*/
 
+.movie_sot{
+    max-height: 200px;
+}
+
+
 .img-deal1 {
     padding: 0;
 }
